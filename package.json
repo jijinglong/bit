@@ -3,9 +3,27 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "express": "~4.15.2"
+    "express": "~4.15.2",
+    "material-ui": "^1.0.0-beta.33",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "serve-favicon": "^2.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/preset-react": "^7.0.0-beta.39",
+    "@babel/preset-stage-3": "^7.0.0-beta.39",
+    "babel-loader": "^8.0.0-beta.0",
+    "clean-webpack-plugin": "^0.1.18",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.11.0",
+    "webpack-merge": "^4.1.1"
   }
 }
